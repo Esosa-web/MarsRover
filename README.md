@@ -28,3 +28,23 @@ Added test cases to verify:
 - Basic movement and rotation
 - Edge cases (plateau boundaries)
 - Multiple rover coordination
+
+## Implementation Highlights
+
+### Plateau Validation
+The Plateau class ensures rovers stay within the defined boundaries:
+![Plateau Validation](screenshots/plateau-validation.png)
+
+### Core Movement Logic
+The heart of the solution - how rovers move and rotate:
+![Movement Logic](screenshots/movement-logic.png)
+
+### Command Processing
+How commands are processed and validated:
+![Command Processing](screenshots/command-processing.png)
+
+### Test Coverage
+Comprehensive test cases covering different scenarios:
+![Test Cases](screenshots/test-cases.png)
+
+## Example Input
