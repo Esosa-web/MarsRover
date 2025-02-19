@@ -33,13 +33,13 @@ Added test cases to verify:
 
 ### Plateau Validation
 The Plateau class ensures rovers stay within the defined boundaries:
-(screenshots/plateau-validation.png)
+![Plateau Validation](screenshots/plateau-validation.png)
+
 ### Core Movement Logic
 The heart of the solution - how rovers move and rotate:
-(screenshots/movement-logic.png)
+![Movement Logic](screenshots/movement-logic.png)
 
 ### Command Processing
 How commands are processed and validated:
-(screenshots/command-processing.png)
+![Command Processing](screenshots/command-processing.png)
 
-## Example Input
