@@ -23,7 +23,7 @@ class Rover {
     }
 
     turnRight() {
-        const directions = ['N', 'W', 'S', 'E'];
+        const directions = ['N', 'E', 'S', 'W'];  // Fixed the correct order for right turn
         const currentIndex = directions.indexOf(this.direction);
         this.direction = directions[(currentIndex + 1) % 4];
     }
@@ -60,6 +60,9 @@ function executeCommands(input) {
             if (command === 'R') rover.turnRight();
             if (command === 'M') {
                 rover.moveForward();
+                if (!plateau.isValidPosition(rover.x, rover.y)) {
+                    throw new Error('Movement would place rover outside plateau');
+                }
             }
         }
         
