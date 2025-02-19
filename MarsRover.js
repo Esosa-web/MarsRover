@@ -80,3 +80,33 @@ LMLMLMLMM
 MMRMMRMRRM`;
 
 console.log(executeCommands(input));
+
+// Test 1: Simple movement
+const test1 = `5 5
+0 0 N
+MM`;  // Should move up 2 spaces
+console.log("\nTest 1 - Simple movement:");
+console.log(executeCommands(test1));  // Expected: 0 2 N
+
+// Test 2: Full rotation
+const test2 = `5 5
+1 1 N
+RRRR`;  // Should rotate in full circle
+console.log("\nTest 2 - Full rotation:");
+console.log(executeCommands(test2));  // Expected: 1 1 N
+
+// Test 3: Complex movement
+const test3 = `5 5
+0 0 N
+RMMLM`;  // Should move in a small square
+console.log("\nTest 3 - Complex movement:");
+console.log(executeCommands(test3));  // Expected: 2 1 N
+
+// Test 4: Multiple rovers with simple commands
+const test4 = `5 5
+1 1 N
+M
+2 2 E
+M`;
+console.log("\nTest 4 - Multiple rovers:");
+console.log(executeCommands(test4));  // Expected: 1 2 N\n3 2 E
